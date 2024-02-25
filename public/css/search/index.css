@@ -1,0 +1,119 @@
+body {
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.search-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.form-section {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.checkbox-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.sub-checkbox-group {
+    margin-left: 20px;
+    display: none; /* 默认不显示 */
+}
+
+.sub-checkbox-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.search-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #0066cc;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.search-button:hover {
+    background-color: #0056a3;
+}
+/* ... 其他样式保持不变 ... */
+
+.toggle-sub-checkboxes {
+    cursor: pointer;
+    padding-left: 10px;
+    user-select: none; /* 防止选中文本 */
+}
+
+.sub-checkbox-group {
+    display: none; /* 默认不显示 */
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+/* 当箭头旋转时的样式 */
+.toggle-sub-checkboxes.rotated {
+    transform: rotate(90deg);
+}
+
+/* 选择所有二级复选框的样式 */
+.sub-checkbox-group.show {
+    display: block;
+}
+/* ... 其他样式保持不变 ... */
+
+.main-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle-sub-checkboxes {
+    cursor: pointer;
+    user-select: none; /* 防止选中文本 */
+    padding: 0 10px; /* 可以根据实际情况调整 */
+}
+
+.sub-checkbox-group {
+    display: none; /* 默认不显示 */
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+/* 当箭头旋转时的样式 */
+.toggle-sub-checkboxes.rotated {
+    transform: rotate(90deg);
+}
+
+/* 选择所有二级复选框的样式 */
+.sub-checkbox-group.show {
+    display: block;
+}

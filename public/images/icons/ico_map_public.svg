@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10px"
+height="14px" viewBox="0 0 10 14" style="enable-background:new 0 0 10 14" xml:space="preserve">
+<style>
+    .st0{fill:#FFFFFF;}
+    .st1{fill:#23A1BA;}
+</style>
+    <g id="layer_1">
+        <path class="st0" d="M4.9,0.5c-2.5,0-4.4,1.9-4.4,4.4c0,3,4.4,8.6,4.4,8.659.2,8,9.2,4.9C9.2,1.8,7.2,0.5,4.9,0.5z"/>
+    </g>
+    <g id="layer_1_copy">
+        <path class="st1" d="M4.9,0.5c-2.5,0-4.4,1.9-4.4,4.4c0,3,4.4,8.6,4.4,8.659.2,8,9.2,4.9C9.2,1.8,7.2,0.5,4.9,0.5z
+        M4.9,7C3.7,7,2.7,6,2.7,4.9s1-2.1,2.1-2.1S7,3.7,7,4.9S6,7,4.9,7z"/>
+    </g>
+</svg>

@@ -1,0 +1,47 @@
+#map{
+    width: 100%;
+    max-height: 700px;
+    overflow: hidden;
+}
+.popup-container{
+    width: 100%;
+    max-width: 400px;
+}
+
+.popup-bubble-anchor:after{
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top:12px solid white;
+}
+.popup-bubble{
+    width: 400px;
+    max-width: 400px;
+    max-height: initial;
+    padding: 16px;
+    line-height: 1.5;
+    border-radius: 8px;
+    overflow-y: unset;
+
+}
+
+.popup-bubble_inner{
+    position: relative;
+    font-size: 14px;
+}
+
+.popup-bubble_close{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+.popup-bubble_ttl{
+    font-weight: 700;
+}
+.popup-bubble_contents{
+    margin-top: 5px;
+}
+.popup-bubble_footer{
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #8ea8e6;
+}

@@ -1,0 +1,19 @@
+.header-container {
+    background-color: #f8f9fa; /* 浅灰色背景，根据需要更改 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    padding: 10px 0; /* 上下填充 */
+}
+.header-logo {
+    height: 50px; /* Logo的高度，根据需要调整 */
+}
+.nav-link {
+    color: #007bff; /* 链接颜色，根据需要调整 */
+    margin-right: 20px; /* 链接之间的间距 */
+}
+.nav-link:hover {
+    text-decoration: none;
+    opacity: 0.7; /* 鼠标悬浮时的透明度变化 */
+}
+.navbar {
+    justify-content: space-between; /* 元素间平均分布 */
+}
