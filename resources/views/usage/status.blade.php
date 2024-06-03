@@ -113,6 +113,9 @@
     $str='<div>90</div>\n<html>100</html>\n<div>aaaaa300</h1>';
     sfsfsdfsdfsd
     dd()
+        dd
+
+        ddd
     preg_match_all('/<html>.*$/m',$str,$matches);
     dd($matches);
     ?>
