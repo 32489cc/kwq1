@@ -70,7 +70,7 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container">ss
     @if(isset($errors))
         <div class="alert alert-danger">
             <ul>
