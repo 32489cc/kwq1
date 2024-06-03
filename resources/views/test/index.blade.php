@@ -75,6 +75,7 @@
     @if(isset($errors))
         <div class="alert alert-danger">
             <ul>
+                fsdfsdfs
                 @foreach($errors->all() as $error)
                     <li>{{$error}}</li>
                 @endforeach
