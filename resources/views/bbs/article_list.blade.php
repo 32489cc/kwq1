@@ -1,3 +1,8 @@
+<?php
+$a=new \App\Models\Zip();
+var_dump($a->search_address(array('zip_code'=>'170-0001')));
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

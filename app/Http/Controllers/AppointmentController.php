@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\libraries\Apps_date;
 use App\Models\AppointmentModel;
 use App\Rules\TimeCompare;
 use Carbon\Carbon;
@@ -12,6 +13,7 @@ class AppointmentController extends Controller
 {
     public function index()
     {
+
         return view('test.index');
     }
     public function register(Request $request)

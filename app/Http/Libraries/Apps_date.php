@@ -62,7 +62,8 @@ class  Apps_date
                     return date('Y-m-01 00:00:00');
                 case 'Y-m-d H:00:00':
                     $time=getdate();
-                    return date('Y/m/d').' '.$time['hours'].'00:00';
+                    var_dump($time);
+                    return date('Y/m/d').' '.$time['hours'].':00:00';
                 default:
                     return date('Y/m/d H:i:s');
             }

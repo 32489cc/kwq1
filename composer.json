@@ -30,7 +30,8 @@
             "app/Helper/border_rate_helper.php",
             "app/Helper/convert_helper.php",
             "app/Helper/recommend_helper.php",
-            "app/Helper/univ_info_xmlss.php"
+            "app/Helper/univ_info_xmlss.php",
+            "app/Helper/password.php"
         ]
     },
     "autoload-dev": {

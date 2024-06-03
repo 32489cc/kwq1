@@ -14,3 +14,41 @@ function convert_large_space_to_small_space($l_large_target)
 //
 //    }
 //}
+
+/**
+ * テキストエリア入力部に対する改行コード変換処理
+ */
+function convert_br_to_kaigyo_code($text)
+{
+    return preg_replace('/\<br \/\>/','\r\n',preg_replace('/\r\n|\n\r|\r/','',$text));
+
+
+}
+
+/**
+ * 入力文字変換(全角カナ→半角カナ)
+ */
+function  get_convert_single_kana($post)
+{
+$convert_str= mb_convert_kana($post['str'],'kh');
+//全角スペースを半角スペースに変換
+    $convert_str=str_replace('　','',$convert_str);
+    return $convert_str;
+}
+/**
+ * 半角カタカナを変換
+ */
+function replace_katakana($katakana)
+{
+    $replace_target=array(
+        '　'=>'',
+        'ｵ'=>'オ',
+        'ｱ'=>'ア',
+        'ｳ'=>'イ',
+        'ｴ'=>'ウ',
+    );
+    $search=array_keys($replace_target);
+    $replace=array_values($replace_target);
+    $result=str_replace($search,$replace,$katakana);
+    return $result;
+}

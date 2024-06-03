@@ -39,3 +39,7 @@ Route::get('test/appointment',[\App\Http\Controllers\AppointmentController::clas
 Route::post('post/test/appointment',[\App\Http\Controllers\AppointmentController::class,'register'])->name('register');
 //
 Route::get('search/map',[\App\Http\Controllers\MapController::class,'index']);
+
+//status
+Route::get('/usage/status',[\App\Http\Controllers\Usage::class,'index'])->name('get_insured_no');
+Route::post('/usage/status',[\App\Http\Controllers\Usage::class,'index'])->name('post_insured_no');

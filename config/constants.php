@@ -5,5 +5,6 @@ return[
     'ARTICLE_LIST_SEARCH_REFERER_URL'=>'/bbs/list',
     'GROUP_CD_ALL'=>0,
     'MAX_CNT_BBS'=>10,
-    'GOOGLE_KEY'=>'AIzaSyCmbGg_HjG3_kKzeh4KFBULFghh2GDOYK0'
+    'GOOGLE_KEY'=>'AIzaSyCmbGg_HjG3_kKzeh4KFBULFghh2GDOYK0',
+    'online_date'=>''
 ];
