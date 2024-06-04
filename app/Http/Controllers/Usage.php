@@ -51,10 +51,10 @@ class Usage extends Controller
         if(!empty($post)){
          $validate_result=$this->__validate($post,$max_this_year,$min_this_year);
             if($validate_result->fails()){
-                dd($validate_result);
+
                 return redirect()->route('get_insured_no')->withErrors($validate_result);
             }else{
-                dd($validate_result);
+
                 $insured_no=$request->input('insured_no');
             }
         }

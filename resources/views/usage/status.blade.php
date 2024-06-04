@@ -110,15 +110,9 @@
 
 <div class="container">
     <?php
-        1234567
     $str='<div>90</div>\n<html>100</html>\n<div>aaaaa300</h1>';
-    sfsfsdfsdfsd
-    dd()
-        dd
-
-        ddd
     preg_match_all('/<html>.*$/m',$str,$matches);
-    dd($matches);
+    //dd($matches);
     ?>
 {{--    <div class="sidebar">--}}
 {{--        <ul>--}}
@@ -146,7 +140,7 @@
         <input type="text" class="input-box" placeholder="1-1001">
         <input type="text" class="input-box" placeholder="野村證券株式会社 本社勤務">
         <button class="btn">F2: 検索</button>
-        <button class="btn">F8: コピー</button>
+        <button class="btn copy">F8: コピー</button>
         </form>
     </header>
     <main>
@@ -223,5 +217,33 @@
 </body>
 <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script>
 <script src="{{'/js/usage/status.js'}}">
+</script>
+<script>
+    $(document).ready(function (){
+        $('.copy').on('click',function (e){
+            e.preventDefault();
+            let error=[];
+            let allerror=[];
+            let allerror_index=[];
+            $('input[class="input-box"]').each(function (index){
+                if($(this).val().trim() === ''){
+                    allerror_index.push(index+1);
+                    allerror.push('error1');
+                    //error+='error'+'No.'+(index+1)+'\n';
+                }
+            })
+            if(allerror_index.length=== $('input[class="input-box"]').length){
+                error+='all_error'
+            }else{
+                for (let i = 0; i < allerror.length; i++) {
+                    error+=allerror[i]+'No.'+allerror_index[i]+'\n';
+                }
+            }
+
+            if(error.length>0){
+                alert(error)
+            }
+        })
+    })
 </script>
 </html>
